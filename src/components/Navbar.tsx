@@ -19,6 +19,9 @@ const Navbar = () => {
         <li>
           <Link to="/profile" className="text-white">Profile</Link>
         </li>
+        <li>
+          Unga Bunga
+        </li>
       </ul>
     </nav>
   );
