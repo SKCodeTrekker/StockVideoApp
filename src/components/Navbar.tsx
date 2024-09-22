@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/profile" className="text-white">Profile</Link>
         </li>
         <li>
-          Unga Bunga
+          Unga Bunga Lunga Lunga
         </li>
       </ul>
     </nav>
