@@ -1,10 +1,10 @@
 import React from 'react';
+import HeroSection from './HeroSection';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Welcome to Stock Website</h1>
-      <p>Discover and share stock images and videos.</p>
+    <div className=''>
+      <HeroSection />
     </div>
   );
 };

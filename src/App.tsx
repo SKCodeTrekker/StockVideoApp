@@ -7,14 +7,17 @@ import DetailPage from './components/DetailPage';
 import UploadPage from './components/UploadPage';
 import ProfilePage from './components/ProfilePage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import VideosPage from "./components/VideoPage"
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <div className="pt-16"> {/* Add padding to separate Navbar from body */}
+      <div className=""> {}
         
         <Routes>
+          <Route path="/videos" Component={VideosPage} />
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
@@ -22,6 +25,7 @@ const App: React.FC = () => {
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };
