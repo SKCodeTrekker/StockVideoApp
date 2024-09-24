@@ -8,7 +8,8 @@ import UploadPage from './components/UploadPage';
 import ProfilePage from './components/ProfilePage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import VideosPage from "./components/VideoPage"
+import VideosPage from './components/VideoPage';
+import ImagePage from './components/ImagePage';
 
 const App: React.FC = () => {
   return (
@@ -18,11 +19,13 @@ const App: React.FC = () => {
         
         <Routes>
           <Route path="/videos" Component={VideosPage} />
+          <Route path="/images" Component={ImagePage} />
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
           <Route path="/upload" element={<UploadPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+
         </Routes>
       </div>
       <Footer />

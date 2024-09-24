@@ -9,15 +9,15 @@ const HeroSection: React.FC = () => {
       </p>
 
       <div className="flex items-center w-full max-w-md mb-4">
-        <select className="h-10 px-4 text-black bg-white rounded-l-md focus:outline-none">
+        {/* <select className="h-10 px-4 text-black bg-white rounded-l-md focus:outline-none">
           <option>All videos</option>
           <option>Popular videos</option>
           <option>Newest videos</option>
-        </select>
+        </select> */}
         <input
           type="text"
-          placeholder="Search All videos"
-          className="w-full h-10 px-4 text-black focus:outline-none"
+          placeholder="Search Videos and Images"
+          className="w-full h-10 px-4 text-black focus:outline-none rounded-l-md"
         />
         <button className="h-10 px-4 bg-white text-gray-700 rounded-r-md hover:bg-gray-300">
           🔍
@@ -25,9 +25,9 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="flex space-x-4">
-        <a href="#" className="text-gray-200 hover:underline">All videos</a>
-        <a href="#" className="text-gray-200 hover:underline">Popular videos</a>
-        <a href="#" className="text-gray-200 hover:underline">Newest videos</a>
+        <a href="#" className="text-gray-200 hover:underline">Trending Videos</a>
+        <a href="#" className="text-gray-200 hover:underline">Trending Images</a>
+        {/* <a href="#" className="text-gray-200 hover:underline"></a> */}
       </div>
     </div>
   );

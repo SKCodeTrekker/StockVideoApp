@@ -26,15 +26,15 @@ const VideosPage = () => {
   );
 
   return (
-    <div className="p-4">
-      <div className="mb-4">
+    <div className="p-4 bg-gradient-to-r from-purple-700 to-blue-700">
+      <div className="flex items-center w-auto mb-4 ">
         <input
           type="text"
-          placeholder="Search videos..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          placeholder="Search Videos"
+          className="w-full h-10 px-4 text-black focus:outline-none rounded-l-md"
         />
+        <button className="h-10 px-4 bg-white rounded-r-md hover:bg-sky-500">🔍
+        </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredVideos.map((video, index) => (
@@ -46,3 +46,15 @@ const VideosPage = () => {
 };
 
 export default VideosPage;
+
+
+<div className="flex items-center w-full max-w-md mb-4">
+<input
+  type="text"
+  placeholder="Search Videos and Images"
+  className="w-full h-10 px-4 text-black focus:outline-none rounded-l-md"
+/>
+<button className="h-10 px-4 bg-white text-gray-700 rounded-r-md hover:bg-gray-300">
+  🔍
+</button>
+</div>
