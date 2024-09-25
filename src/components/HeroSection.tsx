@@ -5,7 +5,7 @@ const HeroSection: React.FC = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-purple-700 to-blue-700 text-white p-8">
       <h1 className="text-3xl font-bold mb-4">Free stock video footage</h1>
       <p className="text-center text-gray-200 mb-6">
-      Discover the world's largest collection of stock footage. Find the perfect clips for your next project and start creating today.
+       Discover the world's largest collection of stock footage. Find the perfect clips for your next project and start creating today.
       </p>
 
       <div className="flex items-center w-full max-w-md mb-4">
