@@ -6,12 +6,12 @@ import VideoCard from './VideoCard';
 const VideosPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const videos = [
-    { title: 'Video 1', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
-    { title: 'Video 2', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
-    { title: 'Video 3', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
-    { title: 'Video 4', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
-    { title: 'Video 5', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
-    { title: 'Video 6', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
+    { title: 'Photographer Name', thumbnail: 'https://loremflickr.com/400/400?random=${i}`' },
     // Add more video objects here
   ];
 
@@ -20,7 +20,7 @@ const VideosPage = () => {
   );
 
   return (
-    <div className="p-4 bg-gradient-to-r from-purple-700 to-blue-700">
+    <div className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-400">
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} className='mb-8' />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredVideos.map((video, index) => (

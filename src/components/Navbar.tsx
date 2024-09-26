@@ -28,7 +28,7 @@ const Navbar = () => {
             Images
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/search" className="hover:text-sky-500">
             Search
           </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to="/detail/1" className="hover:text-sky-500">
             Detail
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/upload" className="hover:text-sky-500">
             Upload

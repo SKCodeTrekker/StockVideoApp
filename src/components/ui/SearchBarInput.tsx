@@ -1,17 +1,23 @@
 import React from 'react';
 
 interface SearchInputProps {
-    placeholder?: string;
-    className?: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
 }
 
-const SearchInput: React.FC<SearchInputProps> = ({ placeholder = "Search here", className = "" }) => {
-    return (
-        <input
-            placeholder={placeholder}
-            className={`rounded-l-md grow border border-gray-400 p-2 h-10 focus:outline-none ${className}`}
-        />
-    );
+const SearchInput: React.FC<SearchInputProps> = ({ value, onChange, className = "" }) => {
+  return (
+    <div className={className}>
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        placeholder="Search..."
+        className="w-full p-2 border border-gray-300 rounded"
+      />
+    </div>
+  );
 };
 
 export default SearchInput;

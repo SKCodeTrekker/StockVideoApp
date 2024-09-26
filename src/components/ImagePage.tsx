@@ -1,13 +1,14 @@
-// import { Search } from "lucide-react"
 import SearchBarAll from "./ui/SearchBar";
-import { Button } from "../components/ui/button"
-// import { Input } from "../components/ui/input"
+import { Button } from "../components/ui/button";
+import { useState } from 'react';
 
-export default function Component() {
+export default function ImagePage() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
-        <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-gradient-to-r from-blue-500 to-green-400">
       {/* Add margin below the search bar */}
-      <SearchBarAll  searchTerm={} setSearchTerm={} className='mb-8' /> 
+      <SearchBarAll searchTerm={searchTerm} setSearchTerm={setSearchTerm} className='mb-8' /> 
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (

@@ -12,7 +12,9 @@ import VideosPage from './components/VideoPage';
 import ImagePage from './components/ImagePage';
 
 const App: React.FC = () => {
+  
   return (
+    
     <Router>
       <Navbar />
       <div className=""> {}
